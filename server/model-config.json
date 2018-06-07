@@ -13,8 +13,36 @@
       "./mixins"
     ]
   },
-  "CoffeeShop": {
-    "dataSource": null,
+  "User": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "neaUser": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Local": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Invite": {
+    "dataSource": "mongoDs",
     "public": true
   }
 }

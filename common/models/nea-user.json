@@ -1,0 +1,38 @@
+{
+  "name": "neaUser",
+  "base": "User",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "id": true,
+      "generated": false
+    },
+    "surname": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "biography": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "invites": {
+      "type": "hasMany",
+      "model": "Invite",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
