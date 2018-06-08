@@ -6,6 +6,12 @@
     "validateUpsert": true
   },
   "properties": {
+    "userReceivedId": {
+      "type": "string",
+      "required": true,
+      "id": true,
+      "generated": false
+    },
     "date": {
       "type": "string",
       "required": true
@@ -28,11 +34,6 @@
   },
   "validations": [],
   "relations": {
-    "invites": {
-      "type": "belongsTo",
-      "model": "neaUser",
-      "foreignKey": "userId"
-    }
   },
   "acls": [],
   "methods": {}
