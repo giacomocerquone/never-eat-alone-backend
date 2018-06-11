@@ -29,7 +29,7 @@
       "type": "string"
     },
     "rating": {
-      "type": "string"
+      "type": "number"
     },
     "price": {
       "type": "number",
@@ -41,6 +41,17 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [{
+    "accessType": "READ",
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW"
+  },
+  {
+    "accessType": "WRITE",
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW"
+  }],
   "methods": {}
 }

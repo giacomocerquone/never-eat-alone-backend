@@ -6,14 +6,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string"
-    },
     "email": {
       "type": "string",
-      "required": true,
       "id": true,
-      "generated": false
+      "generated": false,
+      "required": true
+    },
+    "name": {
+      "type": "string"
     },
     "surname": {
       "type": "string"
@@ -22,6 +22,24 @@
       "type": "string"
     },
     "biography": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "bornDate": {
+      "type": "date"
+    },
+    "city": {
+      "type": "string"
+    },
+    "favFood": {
+      "type": "string"
+    },
+    "interests": {
+      "type": "string"
+    },
+    "job": {
       "type": "string"
     }
   },

@@ -8,9 +8,7 @@
   "properties": {
     "userReceivedId": {
       "type": "string",
-      "required": true,
-      "id": true,
-      "generated": false
+      "required": true
     },
     "date": {
       "type": "string",
@@ -34,6 +32,11 @@
   },
   "validations": [],
   "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "neaUser",
+      "foreignKey": "userId"
+    }
   },
   "acls": [],
   "methods": {}
