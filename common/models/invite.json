@@ -6,7 +6,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "userReceivedId": {
+    "sourceUser": {
+      "type": "string",
+      "required": true
+    },
+    "targetUser": {
       "type": "string",
       "required": true
     },
@@ -32,10 +36,15 @@
   },
   "validations": [],
   "relations": {
-    "users": {
+    "targetUser": {
       "type": "belongsTo",
       "model": "neaUser",
-      "foreignKey": "userId"
+      "foreignKey": "targetUser"
+    },
+    "sourceUser": {
+      "type": "belongsTo",
+      "model": "neaUser",
+      "foreignKey": "sourceUser"
     }
   },
   "acls": [],

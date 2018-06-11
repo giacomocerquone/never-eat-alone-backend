@@ -45,10 +45,15 @@
   },
   "validations": [],
   "relations": {
-    "invites": {
+    "invitesSent": {
       "type": "hasMany",
       "model": "Invite",
-      "foreignKey": "userId"
+      "foreignKey": "sourceUser"
+    },
+    "invitesReceived": {
+      "type": "hasMany",
+      "model": "Invite",
+      "foreignKey": "targetUser"
     }
   },
   "acls": [
